@@ -24,7 +24,16 @@ RTOS is different from GPOS general purpose(windows ,linux)
 GPOS display gui.what able to see on software is GPOS gui.
 RTOS is not designed for MC,where no gui is used.
 
+if only need parallel execution or multitasking ,no rtos required suppose need to execute parallelly/multitasking then we have to go wtih OS.
 
+RTX-51 tiny RTOS is specially designed for 8051(it will not work for other controller exclusively for 8051)
+
+Realtime system: It is designed to provide a timely response to real-world events.
+Eg:airbag system,autopilot system in aeroplane
+
+use of RTOS
+-----------
+* deterministic OS  means timing behaviour of OS is previously defined.
 
 
 
