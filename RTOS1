@@ -75,6 +75,7 @@ Hardreal time system
 Soft real time system
 --------------------
 . meeting deadlines is not compulsory for every task.(small delay can be ignored)
-. eg: ATM machine 
+. The value of result after a deadline is not zero
+. eg: ATM machine,game zones 
 
 
