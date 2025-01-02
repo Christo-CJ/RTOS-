@@ -46,7 +46,25 @@ use of RTOS
 * faster and predictable responce 
 * easy to implement real time applications 
    real time applications come with application programming interface (API)
-   -predefined library fuctions.
+   -predefined library fuctions.]
+* Multitasking support in small memory space
+   RTOS size will be in kb.
+* ITC Inter Task Communcation mechanism suport(sync)
+   event handling ,semaphore event handling,mutex...
+    there is no process there are only task so that task communication is depicted.
+* small footprint 
+   you can set or adjust in small size and is costumizable so called small footprint
+* Open source we can modify os according to our requirement
+* customisable for eg: amazon build an os on freertos
+* Events and interupts are handled in a defined time
+* Task scheduler gives illusion of executing number of tasks simultaneously(there is no actual parallel execution in parallel its time slice method is used)
+...
+
+2type of realtime
+* hard realtime 
+* soft realtime
+
+packet exchanging is main reason big sharks use freertos.
 
 
 
