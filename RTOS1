@@ -31,10 +31,22 @@ RTX-51 tiny RTOS is specially designed for 8051(it will not work for other contr
 Realtime system: It is designed to provide a timely response to real-world events.
 Eg:airbag system,autopilot system in aeroplane
 
+designer will asign the time handling.context witch time should be lesser.
+when io event is generated it will then context sitch in milli seconds.
+
+rate of RTOS MC will be higher than that of normal MC.
+RTOS doesnt use gui.
+inside airbag airbag should be open.
+if driver doent pur seatbelt it will not or the airbag willnot deploy.
+
+
 use of RTOS
 -----------
 * deterministic OS  means timing behaviour of OS is previously defined.
-
+* faster and predictable responce 
+* easy to implement real time applications 
+   real time applications come with application programming interface (API)
+   -predefined library fuctions.
 
 
 
