@@ -3,7 +3,7 @@ Introduction to Real-time system and Real time operating system
 On top of mircrocontroller we have written program like driver and application
 now we are going to run rtos on microcontroller on top of rtos we  are writting drivers and applications.
 
-what ever aapplication writing ovre rtos is real time applications, driver is also part of application.
+what ever aapplication writing over rtos is real time applications, driver is also part of application.
 
 rtos is small os specially designed for microcontroller(MC)
 rtos can be run on any microcontroller 8051,arm controller,avr,pic,...
@@ -66,6 +66,15 @@ use of RTOS
 
 packet exchanging is main reason big sharks use freertos.
 
+Hardreal time system
+--------------------
+. meeting a deadline is mandatory
+. missing a deadline is a total system failure (if airbag not openend its failure)
+. If the value of result after a deadline is "zero" .(if airbag opens up on 90 nanosec but its 1 sec its after deadline so its zero)
 
+Soft real time system
+--------------------
+. meeting deadlines is not compulsory for every task.(small delay can be ignored)
+. eg: ATM machine 
 
 
