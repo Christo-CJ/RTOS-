@@ -89,4 +89,5 @@ path of kernel image   /boot
 
 microkernel
 -----------
-small kernel it is a minimal kernel which offers kernel services with minimum over head.
+small kernel it is a minimal kernel which offers kernel services with minimum over head(extra code).
+eg:RTX,Vx works RTOS,...
