@@ -1,0 +1,63 @@
+what is RTOS?
+Real time operating system is an operating system intended to serve real time application that process data as it comes in,mostly without buffer delay.
+
+multi tasking where the task switching context text will be taken care of rtos.
+in time slicing if time slice time is 10ms then each task switching,context task all taken care by rtos.
+
+multitasking is feature given by rtos.
+intertask communication.(ITC)
+scheduler
+dispatcher 
+these are available in rtos.
+rtos will be having a few features of gpos.
+file management,memory management,network management availbale at gpos which makes rtos small size.
+
+list of rtos
+-----------
+RTX(keil)
+freertos(real time pvt ltd)
+Vxworks(wind river)licensed rtos
+Threadx(microsoft express logic)
+embOS(segger)
+ucos(micrium) etc...
+
+RTX 65 tint exclusively buld for 8081.
+
+RTlinus is a hard realtime rtos microkernel .
+Indian OS is used first by NOKIA.
+
+
+RTX rtos
+---------
+
+
+GPOS                                             RTOS
+-------                                        --------
+.Designed for general purpose computers         Designed for embeddded purposs.
+.Desiged to acieve high throughoy               Designed for perfromance pbot for throughput
+.Same cases it will provide unpredcicatble      Always product predicatabe and quike responce
+and slow reposnce
+.slow responce and not quick responce           faster responce and quick response comapred to GPO
+.scheduling policy is not priority based always schedulingppolicy is priority based alwyas
+because it has to achieve high throughput
+.mololithic or hybrid kernels are used in the   microkernels are used in the RTOS 
+GPOS
+.context switch time ois more compared to rtos  context switching time is less compared to gpos due to less overhead
+.
+
+RTOS have not running in backgroud obviously performance will increase
+
+microkernel used in rtos
+rtos follow priority based.
+3 kernel windows and mac use hybrid kernel linux use monolithic  rtos icrokernel.
+
+
+priority inversion
+------------------
+
+2 processes p2 and p1 and a share resource serial terminal
+any proces can use serial ,rule if any terminal has to use serial terminla process has to lock the resource .so at same time no oter process of os can access it.so thats why lock and unlock .
+
+
+
+
