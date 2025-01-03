@@ -82,3 +82,11 @@ this is what monolithic kernel looklike.
 uname -r  4.15.0-142-generic   (display kernel version)
 
 /boot  ls kernel image is there
+if we remove the image os will not start.
+
+path of kernel image   /boot
+
+
+microkernel
+-----------
+small kernel it is a minimal kernel which offers kernel services with minimum over head.
