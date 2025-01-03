@@ -91,3 +91,12 @@ microkernel
 -----------
 small kernel it is a minimal kernel which offers kernel services with minimum over head(extra code).
 eg:RTX,Vx works RTOS,...
+
+
+
+
+comparison micro and monolithic
+------------------------------
+
+microkernel the scheduler and ITC mech work in kernel space and in user space application and drivers
+monolithic  file manager,memory manager,network manager,scheduler,device driver  in kernel scapce in user spcae only application.
