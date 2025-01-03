@@ -100,3 +100,16 @@ comparison micro and monolithic
 
 microkernel the scheduler and ITC mech work in kernel space and in user space application and drivers
 monolithic  file manager,memory manager,network manager,scheduler,device driver  in kernel scapce in user spcae only application.
+
+
+hybrid kernel
+------------
+it is a combination of monolithic and micro kernel
+eg:mac
+
+
+kernel program + gui program = OS
+
+ps -e | grep "X"
+command gives gui program and process id
+if kill process gui will stop immideatly screen logoff.
