@@ -43,8 +43,8 @@ because it has to achieve high throughput
 .mololithic or hybrid kernels are used in the   microkernels are used in the RTOS 
 GPOS
 .context switch time ois more compared to rtos  context switching time is less compared to gpos due to less overhead
-.
-
+.priority inversion                             no priority inversion  
+.windows                                        rtx
 RTOS have not running in backgroud obviously performance will increase
 
 microkernel used in rtos
@@ -59,6 +59,14 @@ priority inversion
 any proces can use serial ,rule if any terminal has to use serial terminla process has to lock the resource .so at same time no oter process of os can access it.so thats why lock and unlock .
 who lock hardware resource only they can unlock.if one is in lock other will be in wait.only when unlock can happen next process.
 if one process is low priority is running another process of high priority came then also it should wait.
+there is process called prioity inheritence inorder to avoid this priority inversion.
+
+type of kernels
+--------------
+.monolithic kernel
+.micro kernel
+.hybrid kernel 
 
 
-
+monolithic kernel
+-----------------
