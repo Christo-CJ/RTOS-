@@ -49,7 +49,7 @@ RTOS have not running in backgroud obviously performance will increase
 
 microkernel used in rtos
 rtos follow priority based.
-3 kernel windows and mac use hybrid kernel linux use monolithic  rtos icrokernel.
+3 kernel windows and mac use hybrid kernel linux use monolithic  rtos microkernel.
 
 
 priority inversion
@@ -57,7 +57,8 @@ priority inversion
 
 2 processes p2 and p1 and a share resource serial terminal
 any proces can use serial ,rule if any terminal has to use serial terminla process has to lock the resource .so at same time no oter process of os can access it.so thats why lock and unlock .
-
+who lock hardware resource only they can unlock.if one is in lock other will be in wait.only when unlock can happen next process.
+if one process is low priority is running another process of high priority came then also it should wait.
 
 
 
