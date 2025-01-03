@@ -34,7 +34,7 @@ RTX rtos
 GPOS                                             RTOS
 -------                                        --------
 .Designed for general purpose computers         Designed for embeddded purposs.
-.Desiged to acieve high throughoy               Designed for perfromance pbot for throughput
+.Desiged to acieve high throughput               Designed for perfromance pbot for throughput
 .Same cases it will provide unpredcicatble      Always product predicatabe and quike responce
 and slow reposnce
 .slow responce and not quick responce           faster responce and quick response comapred to GPO
@@ -70,3 +70,15 @@ type of kernels
 
 monolithic kernel
 -----------------
+it is a single large process running entirely in a single address space(ie kernel space)
+eg: linux
+
+user space and kernel space
+user space --applications a.out,bashshell,firefox,..
+kernel space--memory management,file manager ,network manager,scheduler...
+
+this is what monolithic kernel looklike.
+
+uname -r  4.15.0-142-generic   (display kernel version)
+
+/boot  ls kernel image is there
