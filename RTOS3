@@ -65,6 +65,15 @@ immediately high priority task gets dispatched
 
 priority is assigned with different then scheduler will use priority based scheduling policy.
 
+idle task
+--------
+idle task available in ready state all the time but will not go to running.
+idle task predefined task of our RTOS.
+idle task created by RTOS kernel.
+priority is 0(zero)
+idle task execute only if t1 t2 t3 goes to waiting or if all the tasks are deleted.
+then only idle task get chance to execute.
+idle task remeins in ready state only.
 
 
 
