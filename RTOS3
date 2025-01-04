@@ -1,2 +1,103 @@
 understanding state diagram of RTOS
 -----------------------------------
+new ready running waiting inactive (almost same as linux)
+instaed of exit state of linux we have inactive.
+
+to write rtos we have to useinbuilt library functions.
+
+i'm going to use rtx rtos.
+
+library functions we get a function to create a task(create_task) function name may differ.
+
+while creating task we have to assign priority to this task.
+priority measured in number (1 to 254)  1 low  254 high  priority level rise from 1 to 254
+in linux priority is reverse order.
+
+in every rtos library funtions will be there.
+
+
+we are creating 3 tasks t1 t2 t3
+
+first creation task will go to new state.
+from new to ready state movement is called admit.
+we have to call function or create task then the scheduler admit this task to ready state.
+lets assume priority level t1 is 1 t2 also 1 t3 also 1
+as soon as task 1 comes then from ready state to running is called dispatch
+t1 running on processor task 1 stay in ready state till time slice is not over .in rtos typically will be 10ms.
+suppose t1 take more time then t1 will be moved back to ready state then t2 comes to running from ready then t2 use processor time
+then as follows t3.
+then again after t3 t1 will come to running.
+here t1 t2 t3 each task cpu use processor time 10ms
+10ms is the context switch time (very quick)
+all task same time also context switch time. scheduling policy used is Round Robin.
+*in rtos all task having same priority then scheduler will use round robin policy to execute the task.
+  or 
+ same priority tasks are executed in the round robin fashion.
+scheduler is responsible for dispatching task
+first scheduler check priority table is all has same priority .
+idle task is the predefined task
+t1 t2 t3 is user defined
+all has same priority then round robin fashion.
+before dispatching always check priority table.
+when creating new task for t2 having priority level 2 then before dispaching scheduler check priority table.
+so first dispatch t2.
+if t1 already running and t2 come scheduler hen get t1 to ready and t2 go to running state.
+if only 5ms used by t1 then also t2 is dispatched after execution of t2 low priority will come 
+if t2 has more time required then each 10 ms it goes to ready state then scheduler check priorityy table then again t2 dispatched 
+scheduler dispatch high priority task
+t1 and t3 get time only after t2 finished
+or t2 priority changed.
+All the deleted task goes to inactive task.
+suppose at run time t2 priority to 1 then scheduler execute in round robin fashion.
+suppose t2 goes to waiting state t1 and t2 gets time for running
+
+*waiting state
+waiting for any 
+.IO event 
+.semaphore event
+.mutex event
+.mailbox event
+
+if goes in waiting state all tasks run in round robin.
+
+suppose event is occured then t2 will goes to ready state
+immediately high priority task gets dispatched
+
+priority is assigned with different then scheduler will use priority based scheduling policy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
