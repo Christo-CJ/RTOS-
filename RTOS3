@@ -94,12 +94,36 @@ FEATURES of RTX RTOS
 3. high speed real time operations with low interupt latency
 4. small footprint for resource constrained systems(only occupy less space,MC with less inbuilt memory)
 5. unlimited number of tasks each with 254 priority level
+6. unlimited number of mutex,semaphore and mailboxes.
+7. supports user timers/software timers(alarm sysytem call)
 
 
+RL-ARM LIBRARY of RTX RTOS
+--------------------------
+Real time ARM library
 
+take eg of linux OS we have glibc where all our functions available in user space (printf,scanf)
+in rtl has RL-ARM library using this we can communicate with kernel space.
+application in user space need to communicate wity kernel through RL-ARM library.
 
+. its middleware library are now part of MDK-professional(keil ide) and are not available seperately
 
+RL-ARM library functions
+------------------------
+* os_sys_init
+* os_sys_init_prio
+* os_tsk_create
+* os_tsk_self
+* os_tsk_delete
+* os_tsk_delete_self
+* os_tsk_prio
+* os_tsk_prio_self
+* os_dly_wait
 
+os_sys_init
+-----------
+. This function initializes and starts the RTX kernel(every initialization)
+. This fucntion launches RTX onlys tarts the first task running.
 
 
 
