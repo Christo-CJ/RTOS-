@@ -78,10 +78,22 @@ idle task remeins in ready state only.
 
 
 
+INTRODUCTION to RTX RTOS
+------------------------
+REAL TIME EXECUTIVE RTOS
+. designed by keil its royalty free RTOS.
+. it is determnistic RTOS designed for ARM and cortex-M devices.
+. (we using LPC2148 ARM7)
+. RTX is a keil's small footprint RTOS ,designed for ARM based controllers(size of RTOS is small)
 
 
-
-
+FEATURES of RTX RTOS
+--------------------
+1. RTX is royalty free,deterministic RTOS with source code
+2. flexible scheduling  round robina and priority based
+3. high speed real time operations with low interupt latency
+4. small footprint for resource constrained systems(only occupy less space,MC with less inbuilt memory)
+5. unlimited number of tasks each with 254 priority level
 
 
 
