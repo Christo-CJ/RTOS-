@@ -24,11 +24,30 @@ OS_TID os_tsk_create(void(*task)(void),u8 prio);
 prio 1-255
 void(*task)(void) - task address
 
+Return value
+------------
+on success: Task ID (TID)  ->file descriptor as same in fopen
+on failure: 0
+
+with help of TID we can do task activities like change prio,delet task,sync,etc..
 
 
+setting up a project in kel ide
+-------------------------------
+keil for RTX.
 
-
-
+1.create a new project and a startup code into source group
+2.select "RTX_kernel" option from target settings.
+   Right click on target->Options for target-->Operating system -->RTX kernel.
+3.Add configuration file into source group
+  Name of config file: RTX_conf_LPC21xx.c
+  path: C:keil_v5\ARM\RL\RTX\config
+4.Startup code setting
+  +comment out line 259 
+  +add below line at line number 257
+       IMPORT SWI_Handler
+(before writing IMPORT SWI_Handler use a tab space)
+5.Write a main.c an ass it to source group.
 
 
 
