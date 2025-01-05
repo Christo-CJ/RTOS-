@@ -50,8 +50,13 @@ keil for RTX.
 5.Write a main.c an ass it to source group.
 
 
-
-
+Why RTX_conf_LPC21xx.c?
+RTOS settings are available here
+   .time-slice setting
+   .round robin time slice setting
+   .timer selection
+   .number of concurrent tasks
+   .idle tasks is defined here
 
 
 
