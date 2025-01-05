@@ -116,10 +116,10 @@ This function will never fail.
 Suppose when create task2 with priority 2 task 2 high priority running in infinite loop only task 2 will run because task 2 is not ending and also has high priority.
 Task1 will starve for cpu time.
 
+Though they are executed in timeslice but we get an illusion of parallel execution.
 
 
-
-
+Debug --> system and thread viewer --> display all the options and information get displayed.
 
 
 
