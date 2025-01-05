@@ -58,16 +58,48 @@ RTOS settings are available here
    .number of concurrent tasks
    .idle tasks is defined here
 
+we can change the file inorder to modify these setings.
+
+IMPORT at time of context switching it is necessary.
+
+header file where all functtion defenitions are included
+#include <RTL.H>
+
+How to define task in RTXRTOS?
+------------------------------
+__task void task_name(void)
+{
+   for(;;)
+    { 
+     ...              //infinite execution 
+    }
+}
+
+for,while,do while any loop
+
+or
+
+__task void task_name(void)
+{
+...                   //for one time execution  
+...
+os_tsk_delete_self();
+}
+
+so function will delete itself
 
 
+Underestanding Time_slice inRTX RTOS
+-------------------------------------
 
+Time-slice is called as system tick is 10ms
 
+Robin_timeout  is called Round_robin_time_slice is 50ms
 
+if tasks are execuring in RR then RTX RTOS will use 50ms for round robin task.
+t1 t2 t3  each task gets 50ms time_slice 
 
-
-
-
-
+These settings can be changed in conf file.
 
 
 
