@@ -102,8 +102,19 @@ t1 t2 t3  each task gets 50ms time_slice
 These settings can be changed in conf file.
 
 
+os_tsk_self
+------------
+os_tsk_self(); return TID of currently running task.
+tid1=os_tsk_self
+prototype:  OS_TID os_tsk_self(void)
+
+Return:
+On success: TID of current task
+This function will never fail.
 
 
+Suppose when create task2 with priority 2 task 2 high priority running in infinite loop only task 2 will run because task 2 is not ending and also has high priority.
+Task1 will starve for cpu time.
 
 
 
