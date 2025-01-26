@@ -10,7 +10,7 @@ Later can change priority using priority function.
 
 Suppose give different priority `os_sys_init_prio(task1,prio_level); ` 
 1 to 254(low to high)  
-prio_level is a integer value 1 to 254.  
+prio_level is a integer value 1 to 254.    
 we cannot use both os_sys_init and os_sys_init_prio at same time.  
 
 ## os_tsk_create
