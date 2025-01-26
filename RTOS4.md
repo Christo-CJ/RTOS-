@@ -4,7 +4,7 @@ After creating idle task it create task 1.
 
 Suppose task 1 is created address of task 1 is given to kernel.Kernel will create task 1 with given priority.    
 Every task has unique priority.  
-While calling this function we doesn't have option to set priorty so kernel will create task 1 and give priority 1.  
+While calling this function we doesn't have option to set priorty so kernel will create task 1 and give priority 1.   
 which task is given in os_sys_init get priority level1.  
 Later can change priority using priority function.  
 
