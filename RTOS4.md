@@ -2,7 +2,7 @@ Before calling os_sys_init then before calling the function iniialize the init p
 Once started it will not coming back to main function.  
 After creating idle task it create task 1.  
 
-Suppose task 1 is created address of task 1 is given to kernel.Kernel will create task 1 with given priority.   
+Suppose task 1 is created address of task 1 is given to kernel.Kernel will create task 1 with given priority.    
 Every task has unique priority.  
 While calling this function we doesn't have option to set priorty so kernel will create task 1 and give priority 1.  
 which task is given in os_sys_init get priority level1.  
