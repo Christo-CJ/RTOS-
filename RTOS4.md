@@ -15,7 +15,7 @@ we cannot use both os_sys_init and os_sys_init_prio at same time.
 
 ## os_tsk_create
 
-This function is used to create a new task to running RTOS and adds it to ready state.
+This function is used to create a new task to running RTOS and adds it to ready state.  
 
 **prototype:**
 
