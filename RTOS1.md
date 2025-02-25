@@ -14,7 +14,7 @@ OS will provide interface between application and hardware and hardware with app
 Middleware software is called `OS` which will provide graphical user interface.
 between software and Hardware.
 It can take care of multi tasking.
-Like keyboard,mouse,internet,screen... all working parallelly because of OS.
+Like keyboard,mouse,internet,screen... all working parallely because of OS.
 
 OS will take input from hardware to application then from application to software.
 
