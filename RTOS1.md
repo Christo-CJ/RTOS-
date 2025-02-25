@@ -44,7 +44,7 @@ If driver doent pur seatbelt it will not or the airbag willnot deploy.
 - Faster and predictable responce 
 - Easy to implement real time applications 
    - real time applications come with application programming interface (API)
-   - predefined library fuctions.]
+   - predefined library fuctions.
 - Multitasking support in small memory space
    RTOS size will be in kb.
 - ITC Inter Task Communcation mechanism suport(sync)
